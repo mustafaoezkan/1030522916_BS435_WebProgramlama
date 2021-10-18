@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Find the Cat</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Find the Cat</h2>
+
+        <div class="puzzleDivId">
+            <img id="img0" src="assets/card.jpg" class="card"
+                onclick="newPuzzleForImg0(); isClickedCounter(); clickedImg0();">
+            <img id="img1" src="assets/card.jpg" class="card"
+                onclick="newPuzzleForImg1(); isClickedCounter(); clickedImg1();">
+            <img id="img2" src="assets/card.jpg" class="card"
+                onclick="newPuzzleForImg2(); isClickedCounter(); clickedImg2();">
+        </div>
+        <div>
+            <button onclick="refreshPage()">Refresh Game</button>
+        </div>
+        <div class="message">
+            <p id="areaId">If you want to find cat card, you must click card.</p>
+            <p id="winId" style="display: none;"></p>
+            <p id="loseId" style="display: none;"></p>
+        </div>
+    </div>
+
+    <script src="code.js"></script>
+    <script>
+        chooseRandomNumbers();
+    </script>
+</body>
+
+</html>
