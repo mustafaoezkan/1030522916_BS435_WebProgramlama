@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Find the Cat</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="bundle.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Find the Cat</h2>
+
+        <div class="puzzleDivId">
+            <img id="img0" src="card.jpg" class="card" onclick="Puzzle.isClickedCounter(); Puzzle.clickedImg0();">
+            <img id="img1" src="card.jpg" class="card" onclick="Puzzle.isClickedCounter(); Puzzle.clickedImg1();">
+            <img id="img2" src="card.jpg" class="card" onclick="Puzzle.isClickedCounter(); Puzzle.clickedImg2();">
+        </div>
+        <div>
+            <button onclick="Puzzle.refreshPage()">Refresh Game</button>
+        </div>
+        <div class="message">
+            <p id="areaId">If you want to find cat card, you must click card.</p>
+            <p id="winId" style="display: none;"></p>
+            <p id="loseId" style="display: none;"></p>
+        </div>
+    </div>
+
+    <script src="bundle.js"></script>
+    <script>
+        Puzzle.newPuzzle();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+html, body {
+    margin: 0px;
+    background-color: rgb(240, 240, 240);
+    color: rgb(71, 53, 25);
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.card {
+    width: 200px;
+    margin: 20px;
+    height: 250px;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.message {
+    background-color: green;
+    color: black;
+}
+
+.link {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
